@@ -25,8 +25,8 @@
           </span>
       </div>
       <div class="item">
-          <span class="icon w-[48px] h-[48px] inline-block">
-              <bell-off class='icon-2x color-white' fillColor="#ffffff" />
+          <span class="icon inline-block">
+              <bell-off class='icon-2x svg-white' fillColor="#ffffff" />
           </span>
       </div>
   </div>
@@ -44,5 +44,16 @@ export default {
 </script>
 
 <style>
+.svg-white svg path{
+  fill : #ffffff ; 
+}
+.material-design-icon.icon-2x {
+    height: 30px;
+    width: 30px;
+}
 
+.material-design-icon.icon-2x > .material-design-icon__svg {
+    height: 30px;
+    width: 30px;
+}
 </style>

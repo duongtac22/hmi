@@ -3,13 +3,5 @@ body {
     overflow: auto;
 }
 
-.material-design-icon.icon-2x {
-    height: 48px;
-    width: 48px;
-}
 
-.material-design-icon.icon-2x > .material-design-icon__svg {
-    height: 48px;
-    width: 48px;
-}
 
