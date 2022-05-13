@@ -1,4 +1,7 @@
 <template>
+  <div class="text-[20px] font-bold text-center uppercase block mb-4">
+    Tiêu đề page
+  </div>
   <Line
     :chart-options="chartOptions"
     :chart-data="chartData"

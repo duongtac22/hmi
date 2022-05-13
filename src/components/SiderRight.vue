@@ -5,29 +5,29 @@
     </div>
     <div class="list-btn-option mx-[-5px] mt-[20px] inline-block w-full">
       <div class="float-left w-1/3 h-[200px] p-[5px]">
-        <a href="javascript:;" class="border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full active">
+        <button type="button" class="w-full border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full active">
           AVR
-        </a>
+        </button>
       </div>
       <div class="float-left w-1/3 h-[100px] p-[5px]">
-        <a href="javascript:;" class="border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full">
+        <button type="button" class="w-full border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full">
           FRC
-        </a>
+        </button>
       </div>
       <div class="float-left w-1/3 h-[100px] p-[5px]">
-        <a href="javascript:;" class="border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full">
+        <button type="button" class="w-full border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full">
           FVR
-        </a>
+        </button>
       </div>
       <div class="float-left w-1/3 h-[100px] p-[5px]">
-        <a href="javascript:;" class="border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full">
+        <button type="button" class="w-full border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full">
           AVR
-        </a>
+        </button>
       </div>
       <div class="float-left w-1/3 h-[100px] p-[5px]">
-        <a href="javascript:;" class="border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full">
+        <button type="button" class="w-full border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full">
           PF
-        </a>
+        </button>
       </div>
     </div>
     <div class="terminal-voltage">
@@ -36,19 +36,26 @@
           Terminal Voltage
         </h3>
         <div class="chart">
-          <img src="https://via.placeholder.com/300x300" class="rounded-full mx-auto" alt="">
+          <!-- <img src="https://via.placeholder.com/300x300" class="rounded-full mx-auto" alt=""> -->
+          <div class="flex item-centers">
+            <Gauget></Gauget>
+          </div>
         </div>
         <h3 class="text-center text-[20px] text-[#888] mt-[20px]">
           AVR setpoint
         </h3>
         <div class="flex justify-center mx-auto max-w-[292px] overflow-hidden border-blue border-[2px] rounded-[5px] border-solid">
-          <a href="#" class="min-w-[60px] w-[60px] h-[60px] block bg-[#ccc] border-blue border-[2px]  rounded-[5px] m-[-2px] mr-0">
-            
-          </a>
+          <button type="button"  class="min-w-[60px] w-[60px] h-[60px] block bg-[#ccc] border-blue border-[2px]  rounded-[5px] m-[-2px] mr-0">
+            <span class="icon inline-block">
+                <chevron-left class='icon-2x svg-white' fillColor="#ffffff" />
+            </span>
+          </button>
           <input type="text" value="40" class="!outline-none text-center text-[30px] w-[180px]">
-          <a href="#" class="min-w-[60px] w-[60px] h-[60px] block bg-[#ccc] border-blue border-[2px]  rounded-[5px] m-[-2px] ml-0">
-
-          </a>
+          <button type="button" class="min-w-[60px] w-[60px] h-[60px] block bg-[#ccc] border-blue border-[2px]  rounded-[5px] m-[-2px] ml-0">
+            <span class="icon inline-block">
+                <chevron-right class='icon-2x svg-white' fillColor="#ffffff" />
+            </span>
+          </button>
         </div>
       </div>
     </div>
@@ -56,8 +63,15 @@
 </template>
 
 <script>
+import Gauget from './Gauget.vue'
+import ChevronLeft from "vue-material-design-icons/ChevronLeft.vue"
+import ChevronRight from "vue-material-design-icons/ChevronRight.vue"
 export default {
-
+ components: {
+    Gauget,
+    ChevronLeft,
+    ChevronRight
+  }
 }
 </script>
 

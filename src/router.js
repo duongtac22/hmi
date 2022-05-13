@@ -5,6 +5,8 @@ import Chart from './components/page/Chart.vue'
 import SingleLine from './components/page/SingleLine.vue'
 import PowerChart from './components/page/PowerChart.vue'
 import TableList from './components/page/TableList.vue'
+import User from './components/page/User.vue'
+import Parameter from './components/page/Parameter.vue'
 import Error from './components/page/Error.vue'
 const routes = [
     {
@@ -14,6 +16,14 @@ const routes = [
     {
         path: '/chart',
         component: Chart
+    },
+    {
+        path: '/parameter',
+        component: Parameter
+    },
+    {
+        path: '/user',
+        component: User
     },
     {
         path: '/single-line',

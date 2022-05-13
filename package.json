@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-chartjs": "^4.1.0",
+    "vue-gauge": "^1.0.3",
     "vue-material-design-icons": "^5.0.0",
     "vue-router": "^4.0.15"
   },
