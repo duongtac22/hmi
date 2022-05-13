@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar">
     <div class="logo text-right">
-      <img src="https://via.placeholder.com/200x90?text=Logo" class="mx-auto" alt="">
+      <img src="https://via.placeholder.com/200x90?text=Logo" class="ml-auto" alt="">
     </div>
     <div class="list-btn-option mx-[-5px] mt-[20px] inline-block w-full">
       <div class="float-left w-1/3 h-[200px] p-[5px]">

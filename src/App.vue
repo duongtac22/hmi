@@ -51,7 +51,7 @@
                 
                 <template v-for="route in router" :key="route.id">
                   <router-link class="link item px-[5px]" :to='route.url'>
-                    <div :class="routeActiveClass" >
+                  <div :class=" $route.path == route.url ? routeActiveClass : routeInActiveClass " >
                       <img src="https://via.placeholder.com/40x40?text=icon" alt="">
                     </div>
                   </router-link> 
@@ -134,11 +134,11 @@ export default {
           icon : '' ,
         },
       ],
-      routeActiveClass : 'w-[80px] h-[80px] mb-[10px] border-purple border-[2px] rounded-[10px] overflow-hidden flex justify-center items-center',
+      routeActiveClass : 'w-[80px] h-[80px] mb-[10px] border-purple bg-purple border-[2px] rounded-[10px] overflow-hidden flex justify-center items-center',
       routeInActiveClass : 'w-[80px] h-[80px] mb-[10px] border-blue border-[2px] rounded-[10px] overflow-hidden flex justify-center items-center',
 
     }
-  }
+  },
 }
 </script>
 
