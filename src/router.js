@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from './components/page/Home.vue'
-import Chart from './components/page/Chart.vue'
-import SingleLine from './components/page/SingleLine.vue'
-import PowerChart from './components/page/PowerChart.vue'
-import TableList from './components/page/TableList.vue'
-import User from './components/page/User.vue'
-import Parameter from './components/page/Parameter.vue'
-import Error from './components/page/Error.vue'
+import Home from './page/Home.vue'
+import Chart from './page/Chart.vue'
+import SingleLine from './page/SingleLine.vue'
+import PowerChart from './page/PowerChart.vue'
+import TableList from './page/TableList.vue'
+import User from './page/User.vue'
+import Parameter from './page/Parameter.vue'
+import Error from './page/Error.vue'
 const routes = [
     {
         path: '/',
