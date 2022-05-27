@@ -1,6 +1,6 @@
 <template>
-  <div class="text-[20px] font-bold text-center uppercase block mb-4">
-    Tiêu đề page
+  <div class="text-[20px] font-bold text-center uppercase block mb-4 mt-[20px]">
+    Power Chart
   </div>
   <Bar :chart-data="chartData" :chart-options="chartOptions" />
 </template>
@@ -23,6 +23,11 @@ export default {
             label: 'Data One',
             backgroundColor: '#f87979',
             data: [40, 20, 12 , 10]
+          },
+           {
+            label: 'Data Two',
+            backgroundColor: '#f34343',
+            data: [20 , 40, 8 , 10]
           }
         ]
       }

@@ -9,13 +9,15 @@
     data() {
         return{
             gaugetOption : {
+                chartWidth : 400,
                 hasNeedle: true,
-                needleColor: 'gray',
-                needleUpdateSpeed: 1000,
-                arcColors: ['rgb(44, 151, 222)', 'lightgray'],
-                arcDelimiters: [70],
-                rangeLabel: ['0', '100'],
-                // centralLabel: '70',
+                outerNeedle: false,
+                needleColor: "#ccc",
+                needleStartValue: 50,
+                arcColors: ["rgb(255,0,0)","rgb(255,128,0)","rgb(31 182 255)"],
+                arcDelimiters: [40,60],
+                rangeLabel: ["0","100"],
+                rangeLabelFontSize: 32,
             }
         }
     }

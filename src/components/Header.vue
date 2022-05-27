@@ -1,44 +1,43 @@
 <template>
   <div class="w-full flex items-center justify-between gap-4 rounded-lg border-2 border-white p-4">
       <div class="item text-white">
-          <span class="text-[14px]">
+          <span class="text-[16px]">
             Status :
           </span>
-          <span class="text-[20px] font-bold">
+          <span class="text-[24px] font-bold">
             ONLINE
           </span>
       </div>
       <div class="item text-white">
-           <span class="text-[14px]">
+           <span class="text-[16px]">
             Limiter :
           </span>
-          <span class="text-[20px] font-bold">
+          <span class="text-[24px] font-bold">
             OEL
           </span>
       </div>
       <div class="item text-white">
-           <span class="text-[14px]">
+           <span class="text-[16px]">
             PSS :
           </span>
-          <span class="text-[20px] font-bold">
+          <span class="text-[24px] font-bold">
             Active
           </span>
       </div>
       <div class="item">
-          <span class="icon inline-block">
-              <bell-off class='icon-2x svg-white' fillColor="#ffffff" />
-          </span>
+          <button class="icon inline-block border-0 outline-0">
+             <font-awesome-icon class="text-white text-[24px]" :icon="['fa','bell-slash']" />
+          </button>
       </div>
   </div>
 </template>
 
 <script>
 
-import BellOff from "vue-material-design-icons/BellOff.vue"
-
 export default {
   components: {
-   BellOff
+  },
+  computed: {
   }
 }
 </script>

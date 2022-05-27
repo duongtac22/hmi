@@ -1,5 +1,5 @@
 <template>
-  <table class="min-w-full divide-y divide-gray table-fixed w-full">
+  <table class="min-w-full divide-y divide-gray table-fixed w-full mt-[20px]">
     <thead class="bg-blue flex text-white w-full ">
       <tr class="flex w-full">
           <th class="p-4 grow  text-center">Signal</th>

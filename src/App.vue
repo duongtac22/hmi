@@ -52,7 +52,9 @@
                 <template v-for="route in router" :key="route.id">
                   <router-link class="link item px-[5px]" :to='route.url'>
                   <div :class=" $route.path == route.url ? routeActiveClass : routeInActiveClass " >
-                      <img src="https://via.placeholder.com/40x40?text=icon" alt="">
+                      <img src="https://via.placeholder.com/40x40?text=icon" alt="" v-if="!route.icon">
+                      <font-awesome-icon class="" :icon="route.icon" v-else/>
+
                     </div>
                   </router-link> 
                 </template>
@@ -82,6 +84,7 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 
 import SiderRight from './components/SiderRight.vue';
+
 export default {
   name: 'App',
   components: {
@@ -96,46 +99,46 @@ export default {
         {
           id : 1,
           url : '/',
-          icon : '' ,
+          icon : ['fa','table-cells-large'] ,
         },
         {
           id : 2,
           url : '/chart',
-          icon : '' ,
+          icon : ['fa','chart-line'] ,
         },
         {
           id : 3,
           url : '/single-line',
-          icon : '' ,
+          icon : ['fa','chart-area'] ,
         },
         {
           id : 4,
           url : '/power-chart',
-          icon : '' ,
+          icon : ['fa','chart-column'] ,
         },
         {
           id : 5,
           url : '/table-list',
-          icon : '' ,
+          icon : ['fa','table-list'] ,
         },
         {
           id : 6,
           url : '/parameter',
-          icon : '' ,
+          icon : ['fa','folder-tree'] ,
         },
         {
           id : 7,
           url : '/history',
-          icon : '' ,
+          icon : ['fa','diagram-next'] ,
         },
         {
           id : 8,
           url : '/user',
-          icon : '' ,
+          icon : ['fa','user-circle'] ,
         },
       ],
-      routeActiveClass : 'w-[80px] h-[80px] mb-[10px] border-purple bg-purple border-[2px] rounded-[10px] overflow-hidden flex justify-center items-center',
-      routeInActiveClass : 'w-[80px] h-[80px] mb-[10px] border-blue border-[2px] rounded-[10px] overflow-hidden flex justify-center items-center',
+      routeActiveClass : 'w-[80px] h-[80px] mb-[10px] border-blue bg-blue border-[2px] rounded-[10px] overflow-hidden flex justify-center items-center text-[32px]',
+      routeInActiveClass : 'w-[80px] h-[80px] mb-[10px] border-blue border-[2px] rounded-[10px] overflow-hidden flex justify-center items-center text-[32px] text-blue',
 
     }
   },
@@ -145,6 +148,6 @@ export default {
 <style>
 .router-link-exact-active{
     border-bottom-color: #F19238;
-    color:#F19238
+    color:#fff ;
  }
 </style>

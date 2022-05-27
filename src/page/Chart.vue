@@ -1,6 +1,6 @@
 <template>
-  <div class="text-[20px] font-bold text-center uppercase block mb-4">
-    Tiêu đề page
+  <div class="text-[20px] font-bold text-center uppercase block mb-4 mt-[20px]">
+    Chart Line Title
   </div>
   <Line
     :chart-options="chartOptions"
@@ -73,12 +73,12 @@ export default {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [
         {
-          label: 'Data One',
+          label: 'Line One',
           backgroundColor: '#f87979',
           data: [40, 39, 10, 40, 39, 80, 40]
         },
         {
-          label: 'Data Two',
+          label: 'Line Two',
           backgroundColor: '#f34343',
           data: [10, 15, 30, 25, 18, 66, 80]
         }
