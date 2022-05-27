@@ -1,8 +1,8 @@
 <template>
   <div class="sidebar">
-    <div class="logo text-right ">
+    <!-- <div class="logo text-right ">
       <img src="https://via.placeholder.com/200x90?text=Logo" class="ml-auto max-h-[72px]" alt="">
-    </div>
+    </div> -->
     <div class="list-btn-option mx-[-5px] mt-[15px] inline-block w-full">
       <div class="float-left w-1/3 h-[200px] p-[5px]">
         <button type="button" class="w-full border-white border-[2px] rounded-[15px] text-white text-[26px] flex items-center justify-center p-10px h-full active">
