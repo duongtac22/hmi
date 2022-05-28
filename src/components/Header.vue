@@ -38,10 +38,12 @@
         <!-- Header: Right side -->
         <div class="flex items-center space-x-3">
           
-          <button class="icon inline-block border-0 outline-0">
-            <font-awesome-icon class="text-white text-[24px]" :icon="['fa','bell-slash']" />
+          <button class="w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200 transition duration-150 rounded-full" @click.prevent="toggleNoti" >
+            <font-awesome-icon class="text-gray-400 text-[16px]" :icon="sortIcon" />
+            <!-- <font-awesome-icon class="text-gray-400 text-[16px]" :icon="['fa','bell']" v-if="notiStatus"/>
+            <font-awesome-icon class="text-gray-400 text-[16px]" :icon="['fa','bell-slash']" v-else /> -->
           </button>
-            <UserMenu align="right" />
+            <UserProfile align="right" />
         </div>
 
       </div>
@@ -50,12 +52,27 @@
 </template>
 
 <script>
+import UserProfile from "./UserProfile.vue";
 
 export default {
   components: {
+      UserProfile
   },
+  data () {
+		return {
+			bell: 'on',
+		};
+	},
   computed: {
-  }
+		sortIcon () {
+			return this.bell === 'on' ? ['fa', 'bell-slash'] : ['fa', 'bell'];
+		}
+	},
+	methods: {
+		toggleNoti () {
+			this.bell = this.bell === 'on' ? 'off' : 'on';
+		}
+	}
 }
 </script>
 

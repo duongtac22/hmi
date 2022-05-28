@@ -7,17 +7,38 @@
       </div>
     </div>
     <div class="flex justify-start px-3 py-2 w-full">
-      <div class="form-check form-switch text-gray-200">
-        <input class="form-check-input appearance-none w-9 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="switchchannel" checked>
+      <div class="form-check flex items-center text-gray-200">
+        <!-- <input class="form-check-input appearance-none w-9 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="switchchannel" checked> -->
+        <select class="form-select appearance-none
+            block
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding bg-no-repeat
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="" id="switchchannel">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+          </select>
         <label class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200" for="switchchannel">Switch Channel</label>
       </div>
+      <!-- <div class="flex justify-center">
+        <div class="mb-3 w-full">
+          
+        </div>
+      </div> -->
     </div>
     
 
-    <div class="mt-4">
-      <button type="button" class="border-white border-[2px] rounded-[15px] text-white text-[14px] flex items-center justify-center w-full h-full py-[10px] px-[15px]">
-        25-Mar-2022<br>
-        06:19:45 PM
+    <div class="">
+      <button type="button" class="text-white text-left text-[14px] px-3 py-2 w-full h-full">
+        25-Mar-2022 06:19:45 PM
       </button>
     </div>
   </div>

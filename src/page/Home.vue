@@ -10,8 +10,8 @@
       </div>
       <div class="flex flex-wrap mx-[-8px] mt-8">
         <div class="item w-1/4 p-[8px] mb-[16px]">
-          <div class="bg-cyan-300 rounded-[15px] border-cyan-300 border-[2px] p-[15px]">
-            <h3 class="text-[20px] text-black font-bold mb-[20px]">Terminal Voltage</h3>
+          <div class="bg-cyan-200 rounded-[15px] border-cyan-200 border-[2px] p-[15px]">
+            <h3 class="text-[16px] text-black font-bold mb-[20px]">Terminal Voltage</h3>
             <div class="text-right">
               <h4 class="text-[26px] text-black font-bold">
                 13,80
@@ -23,8 +23,8 @@
           </div>
         </div>
         <div class="item w-1/4 p-[8px] mb-[16px]">
-          <div class="bg-cyan-300 rounded-[15px] border-cyan-300 border-[2px] p-[15px]">
-            <h3 class="text-[20px] text-black font-bold mb-[20px]">Terminal Current:</h3>
+          <div class="bg-cyan-200 rounded-[15px] border-cyan-200 border-[2px] p-[15px]">
+            <h3 class="text-[16px] text-black font-bold mb-[20px]">Terminal Current:</h3>
             <div class="text-right">
               <h4 class="text-[26px] text-black font-bold">
                 758.2
@@ -36,8 +36,8 @@
           </div>
         </div>
         <div class="item w-1/4 p-[8px] mb-[16px]">
-          <div class="bg-cyan-300 rounded-[15px] border-cyan-300 border-[2px] p-[15px]">
-            <h3 class="text-[20px] text-black font-bold mb-[20px]">Generator Frequency:</h3>
+          <div class="bg-cyan-200 rounded-[15px] border-cyan-200 border-[2px] p-[15px]">
+            <h3 class="text-[16px] text-black font-bold mb-[20px]">Generator Frequency:</h3>
             <div class="text-right">
               <h4 class="text-[26px] text-black font-bold">
                 50.02
@@ -49,8 +49,8 @@
           </div>
         </div>
         <div class="item w-1/4 p-[8px] mb-[16px]">
-          <div class="bg-cyan-300 rounded-[15px] border-cyan-300 border-[2px] p-[15px]">
-            <h3 class="text-[20px] text-black font-bold mb-[20px]">Active Power:</h3>
+          <div class="bg-cyan-200 rounded-[15px] border-cyan-200 border-[2px] p-[15px]">
+            <h3 class="text-[16px] text-black font-bold mb-[20px]">Active Power:</h3>
             <div class="text-right">
               <h4 class="text-[26px] text-black font-bold">
                 15,635
@@ -62,8 +62,8 @@
           </div>
         </div>
         <div class="item w-1/4 p-[8px] mb-[16px]">
-          <div class="bg-cyan-300 rounded-[15px] border-cyan-300 border-[2px] p-[15px]">
-            <h3 class="text-[20px] text-black font-bold mb-[20px]">Reactive Power:</h3>
+          <div class="bg-cyan-200 rounded-[15px] border-cyan-200 border-[2px] p-[15px]">
+            <h3 class="text-[16px] text-black font-bold mb-[20px]">Reactive Power:</h3>
             <div class="text-right">
               <h4 class="text-[26px] text-black font-bold">
                 3,546
@@ -75,8 +75,8 @@
           </div>
         </div>
         <div class="item w-1/4 p-[8px] mb-[16px]">
-          <div class="bg-cyan-300 rounded-[15px] border-cyan-300 border-[2px] p-[15px]">
-            <h3 class="text-[20px] text-black font-bold mb-[20px]">Power Factor:</h3>
+          <div class="bg-cyan-200 rounded-[15px] border-cyan-200 border-[2px] p-[15px]">
+            <h3 class="text-[16px] text-black font-bold mb-[20px]">Power Factor:</h3>
             <div class="text-right">
               <h4 class="text-[26px] text-black font-bold">
                 0.96
@@ -88,8 +88,8 @@
           </div>
         </div>
         <div class="item w-1/4 p-[8px] mb-[16px]">
-          <div class="bg-cyan-300 rounded-[15px] border-cyan-300 border-[2px] p-[15px]">
-            <h3 class="text-[20px] text-black font-bold mb-[20px]">Field Voltage:</h3>
+          <div class="bg-cyan-200 rounded-[15px] border-cyan-200 border-[2px] p-[15px]">
+            <h3 class="text-[16px] text-black font-bold mb-[20px]">Field Voltage:</h3>
             <div class="text-right">
               <h4 class="text-[26px] text-black font-bold">
                 245.8
@@ -101,8 +101,8 @@
           </div>
         </div>
         <div class="item w-1/4 p-[8px] mb-[16px]">
-          <div class="bg-cyan-300 rounded-[15px] border-cyan-300 border-[2px] p-[15px]">
-            <h3 class="text-[20px] text-black font-bold mb-[20px]">Field Current:</h3>
+          <div class="bg-cyan-200 rounded-[15px] border-cyan-200 border-[2px] p-[15px]">
+            <h3 class="text-[16px] text-black font-bold mb-[20px]">Field Current:</h3>
             <div class="text-right">
               <h4 class="text-[26px] text-black font-bold">
                 547.6
