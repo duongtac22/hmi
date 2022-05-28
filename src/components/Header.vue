@@ -1,13 +1,13 @@
 <template>
- <header class="sticky top-0 bg-white border-b border-gray-200 z-30">
+ <header class="top-0 bg-white border-b border-gray-200 z-30">
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 -mb-px">
 
         <!-- Header: Left side -->
         <div class="flex">
 
-         <div class="w-full flex items-center justify-between gap-4 rounded-lg border-2 border-white p-4">
-          <div class="item text-white">
+         <div class="w-full flex items-center justify-between gap-4 rounded-lg p-4">
+          <div class="item text-gray">
               <span class="text-[16px]">
                 Status :
               </span>
@@ -15,7 +15,7 @@
                 ONLINE
               </span>
           </div>
-          <div class="item text-white">
+          <div class="item text-gray">
               <span class="text-[16px]">
                 Limiter :
               </span>
@@ -23,7 +23,7 @@
                 OEL
               </span>
           </div>
-          <div class="item text-white">
+          <div class="item text-gray">
               <span class="text-[16px]">
                 PSS :
               </span>

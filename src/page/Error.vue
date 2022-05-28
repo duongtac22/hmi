@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[20px]">
+  <div class="mb-4">
       Không tìm thấy nội dung
   </div>
 </template>

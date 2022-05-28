@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blue flex text-white w-full mt-[20px]">
+    <div class="bg-sky-300 flex text-white w-full">
             <div class="flex w-full px-5">
                 <div class="p-4 grow  text-center">Parameter</div>
                 <div class="p-4 w-[110px] text-center">Unit</div>
