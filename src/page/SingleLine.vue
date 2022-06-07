@@ -1,5 +1,5 @@
 <template>
-  <div class="text-[20px] font-bold text-center uppercase block mb-4 mt-[20px]">
+  <div class="text-[20px] font-bold text-center uppercase block mb-4">
     Chart Line Title
   </div>
   <Line
