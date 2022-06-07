@@ -16,6 +16,7 @@
     "sass": "^1.52.1",
     "sass-loader": "10.2.1",
     "vue": "^3.0.0",
+    "vue-canvas-gauges": "0.0.0",
     "vue-chartjs": "^4.1.0",
     "vue-gauge": "^1.0.3",
     "vue-router": "^4.0.15"

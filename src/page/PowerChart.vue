@@ -30,6 +30,10 @@ export default {
             data: [20 , 40, 8 , 10]
           }
         ]
+      },
+      chartOptions: {
+          responsive: true,
+          maintainAspectRatio: false,
       }
     }
   }

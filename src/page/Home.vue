@@ -8,8 +8,8 @@
                   </li>
                 </ul>
       </div>
-      <div class="flex flex-wrap mx-[-8px] mt-[20px]">
-        <div class="item w-1/4 p-[8px] mb-[16px]">
+      <div class="flex flex-wrap mx-[-6px] mt-[20px]">
+        <div class="item w-1/4 p-[6px] mb-[6px]">
           <div class="bg-[#ececec] rounded-[15px] border-blue border-[2px] p-[15px]">
             <h3 class="text-[20px] text-[#888] mb-[20px]">Terminal Voltage</h3>
             <div class="text-right">
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="item w-1/4 p-[8px] mb-[16px]">
+        <div class="item w-1/4 p-[6px] mb-[6px]">
           <div class="bg-[#ececec] rounded-[15px] border-blue border-[2px] p-[15px]">
             <h3 class="text-[20px] text-[#888] mb-[20px]">Terminal Current:</h3>
             <div class="text-right">
@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <div class="item w-1/4 p-[8px] mb-[16px]">
+        <div class="item w-1/4 p-[6px] mb-[6px]">
           <div class="bg-[#ececec] rounded-[15px] border-blue border-[2px] p-[15px]">
             <h3 class="text-[20px] text-[#888] mb-[20px]">Generator Frequency:</h3>
             <div class="text-right">
@@ -48,7 +48,7 @@
             </div>
           </div>
         </div>
-        <div class="item w-1/4 p-[8px] mb-[16px]">
+        <div class="item w-1/4 p-[6px] mb-[6px]">
           <div class="bg-[#ececec] rounded-[15px] border-blue border-[2px] p-[15px]">
             <h3 class="text-[20px] text-[#888] mb-[20px]">Active Power:</h3>
             <div class="text-right">
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <div class="item w-1/4 p-[8px] mb-[16px]">
+        <div class="item w-1/4 p-[6px] mb-[6px]">
           <div class="bg-[#ececec] rounded-[15px] border-blue border-[2px] p-[15px]">
             <h3 class="text-[20px] text-[#888] mb-[20px]">Reactive Power:</h3>
             <div class="text-right">
@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-        <div class="item w-1/4 p-[8px] mb-[16px]">
+        <div class="item w-1/4 p-[6px] mb-[6px]">
           <div class="bg-[#ececec] rounded-[15px] border-blue border-[2px] p-[15px]">
             <h3 class="text-[20px] text-[#888] mb-[20px]">Power Factor:</h3>
             <div class="text-right">
@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div class="item w-1/4 p-[8px] mb-[16px]">
+        <div class="item w-1/4 p-[6px] mb-[6px]">
           <div class="bg-[#ececec] rounded-[15px] border-blue border-[2px] p-[15px]">
             <h3 class="text-[20px] text-[#888] mb-[20px]">Field Voltage:</h3>
             <div class="text-right">
@@ -100,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="item w-1/4 p-[8px] mb-[16px]">
+        <div class="item w-1/4 p-[6px] mb-[6px]">
           <div class="bg-[#ececec] rounded-[15px] border-blue border-[2px] p-[15px]">
             <h3 class="text-[20px] text-[#888] mb-[20px]">Field Current:</h3>
             <div class="text-right">
