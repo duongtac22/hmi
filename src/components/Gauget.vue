@@ -1,35 +1,24 @@
 <template>
 <div>
   <radial-gauge :value="gaugeData" :options="options"></radial-gauge>
+  <span class="text">
+      {{ gaugeData }}
+  </span>
 </div>
 </template>
  
 <script>
   import RadialGauge from 'vue-canvas-gauges/src/RadialGauge'
  
+   
   export default {
+    
     data() {
       return {
         gauge : null , 
-        gaugeData : 0 ,
-       
-      };
-    },
-    components: {
-      RadialGauge
-    },
-    props: {
-      value: {
-        type: Number,
-        default: 50
-      },
-      title: {
-        type: String,
-        default: ''
-      },
-       options: { 
-        type: Object,
-        default: () => ({
+        gaugeData : 50 ,
+        value: 50 ,
+        options: {
           units: '°C',
           title: '',
           minValue: 0,
@@ -67,20 +56,35 @@
           valueBox: true,
           valueBoxStroke: 5,
           valueTextShadow: false,
+          valueText : this.gaugeData , 
           valueDec: 0,
           barBeginCircle: 0,
           fontNumbersSize: 25,
           fontUnitsSize: 30,
           fontValueSize: 30
-        })
         }
+      };
+    },
+
+    components: {
+      RadialGauge
+    },
+    props: {
+     
+      // title: {
+      //   type: String,
+      //   default: ''
+      // },
+      
     },
     methods: {
       setGaugeData() {
-        var gauge = this;
+        // var gauge = this;
           setInterval(function () {
-          gauge.gaugeData = Math.random()*100;
-        }, 1000);
+          let gauge =  document.gauges[0];
+          this.gaugeData = gauge.options.valueText = Math.floor(Math.random()*100);
+          gauge.update();
+        }.bind(this), 1000);
       },
     },
     created: function () {
