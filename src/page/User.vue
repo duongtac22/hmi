@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="login" class="justify-center items-center w-full bg-white px-6 flex flex-col lg:w-1/2 xl:w-1/3 m-auto">
+    <!-- <form @submit.prevent="login" class="justify-center items-center w-full bg-white px-6 flex flex-col lg:w-1/2 xl:w-1/3 m-auto">
         <h2 class="text-2xl mb-4 mt-[20px]">Đăng nhập</h2>
         <div class="w-full p-2 justify-start flex flex-col">
             <div class=" flex flex-row">
@@ -17,11 +17,16 @@
             </div>
             <button value="submit" class="px-4 py-2 rounded bg-blue text-white my-4 w-full">Đăng nhập</button>
         </div>
-    </form>
+    </form> -->
+    <Register></Register>
 </template>
 
 <script>
+import Register from '../components/Register' ;
 export default {
+    components: {
+        Register,
+    },
     data() {
         return {
            user:'abc@gamil.com',
@@ -34,6 +39,7 @@ export default {
         login() {
             if(this.inputUser === this.user && this.inputPassword === this.password) {
                 window.localStorage.setItem('authentication', true);
+                this.$store.dispatch('user' , this.inputUser)
             } else {
                 window.localStorage.setItem('authentication', false);
             }
