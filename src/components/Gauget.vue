@@ -61,7 +61,19 @@
           barBeginCircle: 0,
           fontNumbersSize: 25,
           fontUnitsSize: 30,
-          fontValueSize: 30
+          fontValueSize: 30,
+          highlights: [ 
+            {
+              from : 80, 
+              to : 100, 
+              color: "rgba(253, 3, 3, .85)"
+            },
+             {
+              from : 40, 
+              to : 80, 
+              color: "rgba(253, 3, 3, .35)"
+            }
+          ]
         }
       };
     },

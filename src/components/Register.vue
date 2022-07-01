@@ -26,9 +26,17 @@
                 </span>
                 <input v-model="inputPasswordRe" type="password"  class="h-10 border border-blue rounded-r-lg outline-none focus:ring-1 ring-blue-300 w-full pl-3 shadow-0" id="repassword" name="" placeholder="Nhập lại password">
             </div>
-            <button value="submit" class="px-4 py-2 rounded bg-blue text-white my-4 w-full">Đăng ký</button>
+            <div class="my-4 flex items-center">
+                <button value="submit" class="px-4 py-2 rounded bg-blue text-white flex-1 mr-2">Đăng ký</button>
+                <p class="block text-left ml-auto text-[12px] m-0 text-blue" @click="showComponentsLogin(true)">
+                    <span class="cursor-pointer">
+                        Đã có tài khoản ? Đăng nhập
+                    </span>
+                </p>
+            </div>
         </div>
 
+       
     </form>
     
 </template>
@@ -45,6 +53,9 @@
             }
         },
         methods: {
+            showComponentsLogin(item){
+                this.$emit('showComponentsLogin' , item )
+            },  
             validEmail: function (email) {
                 var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 return re.test(email);
@@ -65,7 +76,7 @@
 
     
                 if(this.error.length == 0 ) {
-                    axios.get('http://localhost:3000/users' , registerInfo)
+                    axios.post('http://localhost:3000/users' , registerInfo)
                     .then(
                         console.log('success')
                     ).catch(

@@ -18,32 +18,46 @@
             <button value="submit" class="px-4 py-2 rounded bg-blue text-white my-4 w-full">Đăng nhập</button>
         </div>
     </form> -->
-    <Register></Register>
+    <template v-if="getIsLogin=== true || showLogin=== true ">
+        <Login></Login>
+    </template>
+    <template v-else>
+        <Register @showComponentsLogin = "showComponentsLogin"></Register>
+    </template>
+    
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import Register from '../components/Register' ;
+import Login from '../components/Login' ;
 export default {
     components: {
         Register,
+        Login
     },
     data() {
         return {
-           user:'abc@gamil.com',
-           password : '123456',
-           inputUser: '',
-           inputPassword: ''
+            showLogin : false , 
         }
     },
+    computed: {
+        ...mapGetters([
+            'getIsLogin',
+        ])
+    },
     methods: {
-        login() {
-            if(this.inputUser === this.user && this.inputPassword === this.password) {
-                window.localStorage.setItem('authentication', true);
-                this.$store.dispatch('user' , this.inputUser)
-            } else {
-                window.localStorage.setItem('authentication', false);
-            }
-        }
+        showComponentsLogin(e) {
+            this.showLogin = e  
+        },
+        // login() {
+        //     if(this.inputUser === this.user && this.inputPassword === this.password) {
+        //         window.localStorage.setItem('authentication', true);
+        //         this.$store.dispatch('user' , this.inputUser)
+        //     } else {
+        //         window.localStorage.setItem('authentication', false);
+        //     }
+        // }
     },
 }
 </script>
